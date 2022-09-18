@@ -1,0 +1,49 @@
+
+<HEAD>
+<TITLE> INVITATION SYSYTEM </TITLE>
+
+<style>
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+body{
+background-color: #8FBC8F;
+}
+</style>
+
+</HEAD>
+
+<BODY>
+<div class="content">
+
+<h4 style="color:red;">Instructions</h4>
+<p style="color:red;">1)Instruction 1 </p>
+<p style="color:red;">2)Instruction 2</p>
+<p style="color:red;">3)Instruction 3</p>
+
+<form  name="invForm" onsubmit="validateForm()" method="post">
+Event Name: <input type="text" name="ename"> <br>
+
+Date : <input type="date" name="date"> <br>
+
+Time : <input type="time" name="time"> <br>
+
+Location : <input type="text" name="loc"> <br><br>
+
+Description about event : <br>
+
+<textarea name="desc" rows="4" cols="50">
+
+    </textarea><br><br>
+    
+ attend <input type="radio" name="select" value="attend" required>
+ not attend <input type="radio" name="select" value="not attend" >
+ <script type="text/javascript" src="invValidator.js"></script>
+
+<button type="submit" onclick="validateBox();isOneChecked();stringLengthCheck();">Submit</button>
+
+
+</form>
+</div>
+</BODY>
